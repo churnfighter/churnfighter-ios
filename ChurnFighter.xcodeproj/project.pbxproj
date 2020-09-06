@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"ChurnFighter::ChurnFighterPackageTests::ProductTarget" /* ChurnFighterPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_45 /* Build configuration list for PBXAggregateTarget "ChurnFighterPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_48 /* PBXTargetDependency */,
+			);
+			name = ChurnFighterPackageTests;
+			productName = ChurnFighterPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0B081FBB25023DBD00EEFEFB /* OfferSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FBA25023DBD00EEFEFB /* OfferSignature.swift */; };
+		0B081FBD25024A4100EEFEFB /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FBC25024A4100EEFEFB /* ApiClientProtocol.swift */; };
+		0B081FBF25024ABC00EEFEFB /* StubApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FBE25024ABC00EEFEFB /* StubApiClient.swift */; };
+		0B081FC1250251A000EEFEFB /* MacDeviceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FC0250251A000EEFEFB /* MacDeviceProvider.swift */; };
+		0B081FC7250277CF00EEFEFB /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FC6250277CF00EEFEFB /* URLSessionProtocol.swift */; };
+		0B081FCB250278A800EEFEFB /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FCA250278A800EEFEFB /* StubURLSession.swift */; };
+		0B081FCC250278D300EEFEFB /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FC82502787200EEFEFB /* HttpClientTests.swift */; };
+		0B081FCE25027C0900EEFEFB /* StoreObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FCD25027C0900EEFEFB /* StoreObserverTests.swift */; };
+		0B081FD225027D7B00EEFEFB /* ChurnFighterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FD125027D7B00EEFEFB /* ChurnFighterDelegate.swift */; };
+		0B081FD6250281BA00EEFEFB /* StubPaymentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FD5250281BA00EEFEFB /* StubPaymentTransaction.swift */; };
+		0B081FD82502858F00EEFEFB /* StoreObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FD72502858F00EEFEFB /* StoreObserverProtocol.swift */; };
+		0B081FDA2502865100EEFEFB /* StubStoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FD92502865100EEFEFB /* StubStoreObserver.swift */; };
+		0B081FDC2502865D00EEFEFB /* StubPaymentQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FDB2502865D00EEFEFB /* StubPaymentQueue.swift */; };
+		0B081FDE250286D200EEFEFB /* PaymentQueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FDD250286D200EEFEFB /* PaymentQueueProtocol.swift */; };
+		0B081FDF250287B100EEFEFB /* StubChurnFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FD325027DE700EEFEFB /* StubChurnFighter.swift */; };
+		0B081FE125028E2300EEFEFB /* MacDeviceProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FE025028E2300EEFEFB /* MacDeviceProviderTests.swift */; };
+		0B081FE325028EA000EEFEFB /* ProcessInfoProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FE225028EA000EEFEFB /* ProcessInfoProviding.swift */; };
+		0B081FE525028F5900EEFEFB /* StubProcessInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B081FE425028F5900EEFEFB /* StubProcessInfoProvider.swift */; };
+		0BA385B724EC11B6009B1962 /* UserInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385B424EC1189009B1962 /* UserInfoTests.swift */; };
+		0BA385B924EC21F1009B1962 /* LocaleProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385B824EC21F1009B1962 /* LocaleProviding.swift */; };
+		0BA385BB24EC24C1009B1962 /* DeviceProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385BA24EC24C1009B1962 /* DeviceProviding.swift */; };
+		0BA385C324EC3C13009B1962 /* TimeZoneProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385C224EC3C13009B1962 /* TimeZoneProviding.swift */; };
+		0BA385C624EC3CA7009B1962 /* StubLocaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385BE24EC28C7009B1962 /* StubLocaleProvider.swift */; };
+		0BA385C724EC3CAB009B1962 /* StubDeviceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385C024EC28DD009B1962 /* StubDeviceProvider.swift */; };
+		0BA385C824EC3CBC009B1962 /* StubTimeZoneProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385C424EC3C9C009B1962 /* StubTimeZoneProvider.swift */; };
+		0BA385CA24EC3DEB009B1962 /* BundleProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385C924EC3DEB009B1962 /* BundleProviding.swift */; };
+		0BA385CD24EC3ED0009B1962 /* StubBundleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385CB24EC3ECE009B1962 /* StubBundleProvider.swift */; };
+		0BA385CF24EC403F009B1962 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385CE24EC403F009B1962 /* ApiClient.swift */; };
+		0BA385D124EC4A74009B1962 /* ApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385D024EC4A74009B1962 /* ApiClientTests.swift */; };
+		0BA385D524EC4CF8009B1962 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385D424EC4CF8009B1962 /* HttpClient.swift */; };
+		0BA385D724EC4D1F009B1962 /* HttpClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385D624EC4D1F009B1962 /* HttpClientProtocol.swift */; };
+		0BA385D924EC5086009B1962 /* StubHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA385D824EC5086009B1962 /* StubHttpClient.swift */; };
+		OBJ_30 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ActionProtocol.swift */; };
+		OBJ_31 /* ChurnFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ChurnFighter.swift */; };
+		OBJ_32 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Offer.swift */; };
+		OBJ_33 /* StoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* StoreObserver.swift */; };
+		OBJ_34 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Throttler.swift */; };
+		OBJ_35 /* UpdatePaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* UpdatePaymentDetails.swift */; };
+		OBJ_36 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* UserInfo.swift */; };
+		OBJ_43 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_54 /* ChurnFighterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ChurnFighterTests.swift */; };
+		OBJ_57 /* ChurnFighter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ChurnFighter::ChurnFighter::Product" /* ChurnFighter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BA385B324EC114F009B1962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ChurnFighter::ChurnFighter";
+			remoteInfo = ChurnFighter;
+		};
+		0BA385B624EC118A009B1962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ChurnFighter::ChurnFighterTests";
+			remoteInfo = ChurnFighterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B081FBA25023DBD00EEFEFB /* OfferSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSignature.swift; sourceTree = "<group>"; };
+		0B081FBC25024A4100EEFEFB /* ApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		0B081FBE25024ABC00EEFEFB /* StubApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApiClient.swift; sourceTree = "<group>"; };
+		0B081FC0250251A000EEFEFB /* MacDeviceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDeviceProvider.swift; sourceTree = "<group>"; };
+		0B081FC6250277CF00EEFEFB /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		0B081FC82502787200EEFEFB /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
+		0B081FCA250278A800EEFEFB /* StubURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
+		0B081FCD25027C0900EEFEFB /* StoreObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreObserverTests.swift; sourceTree = "<group>"; };
+		0B081FD125027D7B00EEFEFB /* ChurnFighterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurnFighterDelegate.swift; sourceTree = "<group>"; };
+		0B081FD325027DE700EEFEFB /* StubChurnFighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubChurnFighter.swift; sourceTree = "<group>"; };
+		0B081FD5250281BA00EEFEFB /* StubPaymentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPaymentTransaction.swift; sourceTree = "<group>"; };
+		0B081FD72502858F00EEFEFB /* StoreObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreObserverProtocol.swift; sourceTree = "<group>"; };
+		0B081FD92502865100EEFEFB /* StubStoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubStoreObserver.swift; sourceTree = "<group>"; };
+		0B081FDB2502865D00EEFEFB /* StubPaymentQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPaymentQueue.swift; sourceTree = "<group>"; };
+		0B081FDD250286D200EEFEFB /* PaymentQueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentQueueProtocol.swift; sourceTree = "<group>"; };
+		0B081FE025028E2300EEFEFB /* MacDeviceProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDeviceProviderTests.swift; sourceTree = "<group>"; };
+		0B081FE225028EA000EEFEFB /* ProcessInfoProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoProviding.swift; sourceTree = "<group>"; };
+		0B081FE425028F5900EEFEFB /* StubProcessInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubProcessInfoProvider.swift; sourceTree = "<group>"; };
+		0BA385B424EC1189009B1962 /* UserInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTests.swift; sourceTree = "<group>"; };
+		0BA385B824EC21F1009B1962 /* LocaleProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleProviding.swift; sourceTree = "<group>"; };
+		0BA385BA24EC24C1009B1962 /* DeviceProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProviding.swift; sourceTree = "<group>"; };
+		0BA385BE24EC28C7009B1962 /* StubLocaleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubLocaleProvider.swift; sourceTree = "<group>"; };
+		0BA385C024EC28DD009B1962 /* StubDeviceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubDeviceProvider.swift; sourceTree = "<group>"; };
+		0BA385C224EC3C13009B1962 /* TimeZoneProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneProviding.swift; sourceTree = "<group>"; };
+		0BA385C424EC3C9C009B1962 /* StubTimeZoneProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTimeZoneProvider.swift; sourceTree = "<group>"; };
+		0BA385C924EC3DEB009B1962 /* BundleProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleProviding.swift; sourceTree = "<group>"; };
+		0BA385CB24EC3ECE009B1962 /* StubBundleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubBundleProvider.swift; sourceTree = "<group>"; };
+		0BA385CE24EC403F009B1962 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		0BA385D024EC4A74009B1962 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		0BA385D424EC4CF8009B1962 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		0BA385D624EC4D1F009B1962 /* HttpClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProtocol.swift; sourceTree = "<group>"; };
+		0BA385D824EC5086009B1962 /* StubHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubHttpClient.swift; sourceTree = "<group>"; };
+		"ChurnFighter::ChurnFighter::Product" /* ChurnFighter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ChurnFighter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ChurnFighter::ChurnFighterTests::Product" /* ChurnFighterTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChurnFighterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* ChurnFighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurnFighter.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		OBJ_12 /* StoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreObserver.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		OBJ_14 /* UpdatePaymentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePaymentDetails.swift; sourceTree = "<group>"; };
+		OBJ_15 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ChurnFighterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurnFighterTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_24 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_57 /* ChurnFighter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B081FE62505021E00EEFEFB /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				0B081FE82505023C00EEFEFB /* Components */,
+				0BA385BC24EC2709009B1962 /* Protocols */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		0B081FE72505022800EEFEFB /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				0B081FEA2505024900EEFEFB /* Components */,
+				0B081FE92505024400EEFEFB /* Protocols */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		0B081FE82505023C00EEFEFB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* StoreObserver.swift */,
+				OBJ_13 /* Throttler.swift */,
+				OBJ_15 /* UserInfo.swift */,
+				0BA385CE24EC403F009B1962 /* ApiClient.swift */,
+				0BA385D424EC4CF8009B1962 /* HttpClient.swift */,
+				0B081FBA25023DBD00EEFEFB /* OfferSignature.swift */,
+				0B081FC0250251A000EEFEFB /* MacDeviceProvider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0B081FE92505024400EEFEFB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ActionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0B081FEA2505024900EEFEFB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* ChurnFighter.swift */,
+				OBJ_11 /* Offer.swift */,
+				OBJ_14 /* UpdatePaymentDetails.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0B081FEB250502B700EEFEFB /* ComponentTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* ChurnFighterTests.swift */,
+				0BA385B424EC1189009B1962 /* UserInfoTests.swift */,
+				0BA385D024EC4A74009B1962 /* ApiClientTests.swift */,
+				0B081FC82502787200EEFEFB /* HttpClientTests.swift */,
+				0B081FCD25027C0900EEFEFB /* StoreObserverTests.swift */,
+				0B081FE025028E2300EEFEFB /* MacDeviceProviderTests.swift */,
+			);
+			path = ComponentTests;
+			sourceTree = "<group>";
+		};
+		0BA385BC24EC2709009B1962 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0BA385B824EC21F1009B1962 /* LocaleProviding.swift */,
+				0BA385BA24EC24C1009B1962 /* DeviceProviding.swift */,
+				0BA385C224EC3C13009B1962 /* TimeZoneProviding.swift */,
+				0BA385C924EC3DEB009B1962 /* BundleProviding.swift */,
+				0BA385D624EC4D1F009B1962 /* HttpClientProtocol.swift */,
+				0B081FBC25024A4100EEFEFB /* ApiClientProtocol.swift */,
+				0B081FC6250277CF00EEFEFB /* URLSessionProtocol.swift */,
+				0B081FD125027D7B00EEFEFB /* ChurnFighterDelegate.swift */,
+				0B081FD72502858F00EEFEFB /* StoreObserverProtocol.swift */,
+				0B081FDD250286D200EEFEFB /* PaymentQueueProtocol.swift */,
+				0B081FE225028EA000EEFEFB /* ProcessInfoProviding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0BA385BD24EC28BD009B1962 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0BA385BE24EC28C7009B1962 /* StubLocaleProvider.swift */,
+				0BA385C024EC28DD009B1962 /* StubDeviceProvider.swift */,
+				0BA385C424EC3C9C009B1962 /* StubTimeZoneProvider.swift */,
+				0B081FE425028F5900EEFEFB /* StubProcessInfoProvider.swift */,
+				0BA385CB24EC3ECE009B1962 /* StubBundleProvider.swift */,
+				0BA385D824EC5086009B1962 /* StubHttpClient.swift */,
+				0B081FBE25024ABC00EEFEFB /* StubApiClient.swift */,
+				0B081FCA250278A800EEFEFB /* StubURLSession.swift */,
+				0B081FD325027DE700EEFEFB /* StubChurnFighter.swift */,
+				0B081FD5250281BA00EEFEFB /* StubPaymentTransaction.swift */,
+				0B081FD92502865100EEFEFB /* StubStoreObserver.swift */,
+				0B081FDB2502865D00EEFEFB /* StubPaymentQueue.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* ChurnFighterTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* ChurnFighterTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B081FEB250502B700EEFEFB /* ComponentTests */,
+				0BA385BD24EC28BD009B1962 /* Stubs */,
+			);
+			name = ChurnFighterTests;
+			path = Tests/ChurnFighterTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"ChurnFighter::ChurnFighter::Product" /* ChurnFighter.framework */,
+				"ChurnFighter::ChurnFighterTests::Product" /* ChurnFighterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_16 /* Tests */,
+				OBJ_20 /* Products */,
+				OBJ_23 /* LICENSE */,
+				OBJ_24 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* ChurnFighter */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* ChurnFighter */ = {
+			isa = PBXGroup;
+			children = (
+				0B081FE72505022800EEFEFB /* Public */,
+				0B081FE62505021E00EEFEFB /* Internal */,
+			);
+			name = ChurnFighter;
+			path = Sources/ChurnFighter;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"ChurnFighter::ChurnFighter" /* ChurnFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_26 /* Build configuration list for PBXNativeTarget "ChurnFighter" */;
+			buildPhases = (
+				OBJ_29 /* Sources */,
+				OBJ_37 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurnFighter;
+			productName = ChurnFighter;
+			productReference = "ChurnFighter::ChurnFighter::Product" /* ChurnFighter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ChurnFighter::ChurnFighterTests" /* ChurnFighterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "ChurnFighterTests" */;
+			buildPhases = (
+				OBJ_53 /* Sources */,
+				OBJ_56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_58 /* PBXTargetDependency */,
+			);
+			name = ChurnFighterTests;
+			productName = ChurnFighterTests;
+			productReference = "ChurnFighter::ChurnFighterTests::Product" /* ChurnFighterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"ChurnFighter::SwiftPMPackageDescription" /* ChurnFighterPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "ChurnFighterPackageDescription" */;
+			buildPhases = (
+				OBJ_42 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurnFighterPackageDescription;
+			productName = ChurnFighterPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ChurnFighter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"ChurnFighter::ChurnFighter" /* ChurnFighter */,
+				"ChurnFighter::SwiftPMPackageDescription" /* ChurnFighterPackageDescription */,
+				"ChurnFighter::ChurnFighterPackageTests::ProductTarget" /* ChurnFighterPackageTests */,
+				"ChurnFighter::ChurnFighterTests" /* ChurnFighterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0B081FC7250277CF00EEFEFB /* URLSessionProtocol.swift in Sources */,
+				OBJ_30 /* ActionProtocol.swift in Sources */,
+				0B081FD225027D7B00EEFEFB /* ChurnFighterDelegate.swift in Sources */,
+				0B081FBB25023DBD00EEFEFB /* OfferSignature.swift in Sources */,
+				0BA385BB24EC24C1009B1962 /* DeviceProviding.swift in Sources */,
+				0BA385B924EC21F1009B1962 /* LocaleProviding.swift in Sources */,
+				OBJ_31 /* ChurnFighter.swift in Sources */,
+				0B081FE325028EA000EEFEFB /* ProcessInfoProviding.swift in Sources */,
+				0BA385D724EC4D1F009B1962 /* HttpClientProtocol.swift in Sources */,
+				OBJ_32 /* Offer.swift in Sources */,
+				0B081FDE250286D200EEFEFB /* PaymentQueueProtocol.swift in Sources */,
+				0BA385C324EC3C13009B1962 /* TimeZoneProviding.swift in Sources */,
+				OBJ_33 /* StoreObserver.swift in Sources */,
+				0BA385D524EC4CF8009B1962 /* HttpClient.swift in Sources */,
+				0BA385CA24EC3DEB009B1962 /* BundleProviding.swift in Sources */,
+				0B081FD82502858F00EEFEFB /* StoreObserverProtocol.swift in Sources */,
+				0B081FC1250251A000EEFEFB /* MacDeviceProvider.swift in Sources */,
+				OBJ_34 /* Throttler.swift in Sources */,
+				OBJ_35 /* UpdatePaymentDetails.swift in Sources */,
+				0B081FBD25024A4100EEFEFB /* ApiClientProtocol.swift in Sources */,
+				OBJ_36 /* UserInfo.swift in Sources */,
+				0BA385CF24EC403F009B1962 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_43 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0BA385C824EC3CBC009B1962 /* StubTimeZoneProvider.swift in Sources */,
+				0B081FBF25024ABC00EEFEFB /* StubApiClient.swift in Sources */,
+				0B081FDC2502865D00EEFEFB /* StubPaymentQueue.swift in Sources */,
+				0BA385C724EC3CAB009B1962 /* StubDeviceProvider.swift in Sources */,
+				0B081FD6250281BA00EEFEFB /* StubPaymentTransaction.swift in Sources */,
+				0B081FE525028F5900EEFEFB /* StubProcessInfoProvider.swift in Sources */,
+				0B081FDA2502865100EEFEFB /* StubStoreObserver.swift in Sources */,
+				0BA385C624EC3CA7009B1962 /* StubLocaleProvider.swift in Sources */,
+				0BA385B724EC11B6009B1962 /* UserInfoTests.swift in Sources */,
+				0BA385D124EC4A74009B1962 /* ApiClientTests.swift in Sources */,
+				0BA385CD24EC3ED0009B1962 /* StubBundleProvider.swift in Sources */,
+				0B081FCE25027C0900EEFEFB /* StoreObserverTests.swift in Sources */,
+				0B081FE125028E2300EEFEFB /* MacDeviceProviderTests.swift in Sources */,
+				OBJ_54 /* ChurnFighterTests.swift in Sources */,
+				0BA385D924EC5086009B1962 /* StubHttpClient.swift in Sources */,
+				0B081FCC250278D300EEFEFB /* HttpClientTests.swift in Sources */,
+				0B081FCB250278A800EEFEFB /* StubURLSession.swift in Sources */,
+				0B081FDF250287B100EEFEFB /* StubChurnFighter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ChurnFighter::ChurnFighterTests" /* ChurnFighterTests */;
+			targetProxy = 0BA385B624EC118A009B1962 /* PBXContainerItemProxy */;
+		};
+		OBJ_58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ChurnFighter::ChurnFighter" /* ChurnFighter */;
+			targetProxy = 0BA385B324EC114F009B1962 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ChurnFighter.xcodeproj/ChurnFighter_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ChurnFighter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ChurnFighter;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ChurnFighter.xcodeproj/ChurnFighter_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ChurnFighter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ChurnFighter;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ChurnFighter.xcodeproj/ChurnFighterTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ChurnFighterTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ChurnFighter.xcodeproj/ChurnFighterTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ChurnFighterTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "ChurnFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_26 /* Build configuration list for PBXNativeTarget "ChurnFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_27 /* Debug */,
+				OBJ_28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_39 /* Build configuration list for PBXNativeTarget "ChurnFighterPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_40 /* Debug */,
+				OBJ_41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_45 /* Build configuration list for PBXAggregateTarget "ChurnFighterPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_46 /* Debug */,
+				OBJ_47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_50 /* Build configuration list for PBXNativeTarget "ChurnFighterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_51 /* Debug */,
+				OBJ_52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
