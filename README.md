@@ -26,7 +26,7 @@ import ChurnFighter
 ```
 Objective C
 
-```swift
+```objc
 @import ChurnFighter;
 ```
 
@@ -83,7 +83,7 @@ ChurnFighter.shared.setUserProperty(key: "lastName", value: "Appleseed")
 
 Objective C
 
-```swift
+```objc
 [ChurnFighter.shared setUserPropertyWithKey:@"firstName" value:@"John"];
 [ChurnFighter.shared setUserPropertyWithKey:@"firstName" value:@"Appleseed"];
 ```
@@ -164,7 +164,7 @@ public func application(_ application: UIApplication, continue userActivity: NSU
 
 Objective C
 
-```
+```objc
 - (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
     
     NSObject<ActionProtocol> * action = [ChurnFighter.shared actionFromUniversalLinkWithUserActivity:userActivity];
@@ -201,7 +201,7 @@ ChurnFighter.shared.prepareOffer(usernameHash: userNameHash,
 ```
 Objective C
 
-```
+```objc
 if (action != NULL && [action isKindOfClass:[Offer class]]) {
 
     Offer *offer = (Offer *) action ;
