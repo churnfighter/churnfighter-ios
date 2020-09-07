@@ -19,34 +19,78 @@ Swift package for the Churfighter.io platform
 
 ### Import the ChurnFighter module
 
+Swift 
+
 ```swift
 import ChurnFighter
 ```
+Objective C
+
+```swift
+@import ChurnFighter;
+```
+
 
 ### Configure ChurnFighter in your app delegate
+Swift
 
 ```swift
 ChurnFighter.configure(apiKey: "<<apiKey>>", secret: "<<apiSecret>>")
 ```
+Objective C
+
+```objc
+[ChurnFighter configureWithApiKey:@"<<apiKey>>" secret:@"<<apiSecret>>"];
+```
+
 Your api Key and Secret can be found in the App Settings on [churnfighter.io](https://churnfighter.io)
 ### Set the user email if / when available
+Swift
+
 ```swift
 ChurnFighter.shared.setUserEmail("user@example.com")
 ```
+Objective C
+
+```objc
+[ChurnFighter.shared setUserEmail:@"user@example.com"];
+```
 
 ### Set the user device token if / when available
+Swift
+
 ```swift
 public func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 
     ChurnFighter.shared.didRegisterForRemoteNotificationsWithDeviceToken(deviceToken)
 }
 ```
+Objective C
+
+```objc
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    [ChurnFighter.shared didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+```
 ### Set custom user properties
+Swift
+
 ```swift
 ChurnFighter.shared.setUserProperty(key: "firstName", value: "John")
 ChurnFighter.shared.setUserProperty(key: "lastName", value: "Appleseed")
 ```
+
+Objective C
+
+```swift
+[ChurnFighter.shared setUserPropertyWithKey:@"firstName" value:@"John"];
+[ChurnFighter.shared setUserPropertyWithKey:@"firstName" value:@"Appleseed"];
+```
+
 ### React to receiving a push notification from ChurnFighter
+Swift
+
 ```swift
 public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
 
@@ -70,7 +114,32 @@ public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceiv
     completionHandler()
 }
 ```
+Objective C
+
+```objc
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler {
+    
+    NSDictionary *userInfo = response.notification.request.content.userInfo;
+    NSObject<ActionProtocol> * action = [ChurnFighter.shared actionFromNotificationResponseWithUserInfo:userInfo];
+
+    if (action != NULL && [action isKindOfClass:[Offer class]]) {
+
+        Offer *offer = (Offer *) action ;
+        [self displayOffer: offer];
+    }
+    
+    if (action != NULL && [action isKindOfClass:[UpdatePaymentDetails class]]) {
+
+        UpdatePaymentDetails *updatePaymentDetails = (UpdatePaymentDetails *) action ;
+        [self displayUpdatePaymentDetails: updatePaymentDetails];
+    }
+    
+    completionHandler()
+}
+```
 ### React to opening the app from a universal link
+Swift
+
 ```swift
 public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         
@@ -92,7 +161,33 @@ public func application(_ application: UIApplication, continue userActivity: NSU
     return true
 }
 ```
+
+Objective C
+
+```
+- (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    
+    NSObject<ActionProtocol> * action = [ChurnFighter.shared actionFromUniversalLinkWithUserActivity:userActivity];
+    
+    if ([action isKindOfClass:[Offer class]]) {
+           
+        Offer *offer = (Offer *) action ;
+        [self displayOffer: offer];
+    }
+    
+    if ([action isKindOfClass:[UpdatePaymentDetails class]]) {
+       
+        UpdatePaymentDetails *updatePaymentDetails = (UpdatePaymentDetails *) action ;
+        [self displayUpdatePaymentDetails: updatePaymentDetails];
+    }
+    
+    return true;
+}
+```
+
 ### Generate a SKPaymentDiscount for a subscription offer
+Swift
+
 ```swift
 ChurnFighter.shared.prepareOffer(usernameHash: userNameHash,
                                  productIdentifier: offer.productId,
@@ -101,6 +196,26 @@ ChurnFighter.shared.prepareOffer(usernameHash: userNameHash,
     if let paymentDiscount = paymentDiscount {
 
         displaySubscriptionOffer(paymentDiscount)
+    }
+}
+```
+Objective C
+
+```
+if (action != NULL && [action isKindOfClass:[Offer class]]) {
+
+    Offer *offer = (Offer *) action ;
+    
+    
+    if (@available(iOS 12.2, *)) {
+        
+        [ChurnFighter.shared prepareOfferWithUsernameHash:@"userNameHash"
+                                        productIdentifier:@"productIdentifier"
+                                          offerIdentifier:@"offerIdentifier"
+                                               completion:^(SKPaymentDiscount * _Nonnull paymentDiscount) {
+            
+            [self processOfferWithDiscount:paymentDiscount];
+        }];
     }
 }
 ```
