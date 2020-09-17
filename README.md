@@ -1,6 +1,6 @@
 ![](https://github.com/churnfighter/churnfighter-ios/workflows/UnitTests/badge.svg)
 # ChurnFighter iOS framework. 
-Swift package for the Churfighter.io platform
+Swift package for the [Churfighter.io](https://churnfighter.io) platform
 
 ## <a name="requirements"></a>Compatibility
 
